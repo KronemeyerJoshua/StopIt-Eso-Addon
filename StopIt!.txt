@@ -1,6 +1,6 @@
 ## Title: StopIt!
-## APIVersion: 100017
-## Version: 0.51
+## APIVersion: 100028
+## Version: 0.52
 ## Author: Bazgrim
 
 StopIt!.lua
