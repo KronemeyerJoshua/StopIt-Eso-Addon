@@ -1,5 +1,5 @@
 ## Title: StopIt!
-## APIVersion: 100028
+## APIVersion: 100027 100028
 ## Version: 0.52
 ## Author: Bazgrim
 
