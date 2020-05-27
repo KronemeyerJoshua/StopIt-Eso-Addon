@@ -1,6 +1,6 @@
 StopIt = {
 	name = "StopIt!",
-	version = "0.51",
+	version = "0.54",
 };
 
 
@@ -182,6 +182,7 @@ FRAGMENT_GROUP =
     {
         FRAME_TARGET_GAMEPAD_RIGHT_FRAGMENT,
         FRAME_TARGET_BLUR_GAMEPAD_RIGHT_FRAGMENT,
+
     },
     FRAME_TARGET_GAMEPAD_RIGHT_FURTHER_AWAY =
     {
