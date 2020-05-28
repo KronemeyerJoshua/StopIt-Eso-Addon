@@ -1,6 +1,6 @@
 StopIt = {
 	name = "StopIt!",
-	version = "0.54",
+	version = "0.55",
 };
 
 
@@ -41,13 +41,17 @@ function StopIt.OnAddOnLoaded(_,addOnName)
 		'antiquityJournalKeyboard'
 	}
 
+
     -- Removing FRAME_PLAYER_FRAGMENT from targeted scenes
 	for k, v in pairs(TARGETED_SCENES) do
 		SCENE_MANAGER:GetScene(v):RemoveFragment(FRAME_PLAYER_FRAGMENT)
 	end
-	-- Using a for loop on SCENE_MANAGER.scenes causes a lot of bugs... Targeting specific scenes instead
+	-- Special Cases
 	SCENE_MANAGER:GetScene('championPerks'):RemoveFragment(END_IN_WORLD_INTERACTIONS_FRAGMENT)
 	SCENE_MANAGER:GetScene('cadwellsAlmanac'):RemoveFragmentGroup(FRAGMENT_GROUP.FRAME_TARGET_STANDARD_RIGHT_PANEL)
+
+	-- Allows normal camera movement during collections menu
+	SCENE_MANAGER:GetScene('collectionsBook'):RemoveFragment(ITEM_PREVIEW_KEYBOARD:GetFragment())
 
 	-- OVERRIDING GLOBAL VARS TO REMOVE FRAME_PLAYER_FRAGMENT FOR THIRD PARTY ADDONS
 	for k, v in pairs (FRAGMENT_GROUP) do
