@@ -1,6 +1,6 @@
 StopIt = {
 	name = "StopIt!",
-	version = "0.55",
+	version = "0.56",
 };
 
 
