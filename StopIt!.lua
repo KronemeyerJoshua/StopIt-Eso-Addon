@@ -10,13 +10,15 @@ function StopIt.OnAddOnLoaded(_,addOnName)
     -- These are the scenes we know still work correctly when FRAME_PLAYER_FRAGMENT is removed
 	TARGETED_SCENES = {
 		'inventory',
-		'stats',
+		-- 'stats',
 		'skills',
 		'questJournal',
 		'achievements',
 		'leaderboards',
 		'loreLibrary',
-		'collectionsBook',
+		-- 'collectionsBook',
+		'housingBook',
+		-- 'outfitStylesBook',
 		'dlcBook',
 		'friendsList',
 		'ignoreList',
